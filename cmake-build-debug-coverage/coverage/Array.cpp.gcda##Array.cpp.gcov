@@ -1,0 +1,147 @@
+        -:    0:Source:C:/Users/PC/CLionProjects/Data Structures and Algorithms/Array.cpp
+        -:    0:Graph:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\Array.cpp.gcno
+        -:    0:Data:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\Array.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by PC on 7/15/2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "Array.h"
+        -:    6:#include <iostream>
+        -:    7:using namespace std;
+        -:    8:
+function _ZN5ArrayC2Ei called 0 returned 0% blocks executed 0%
+    #####:    9:Array::Array(int size) {
+    #####:   10:    values = new int[size];
+    %%%%%:   10-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   10-block  1
+    %%%%%:   10-block  2
+call    2 never executed
+    %%%%%:   10-block  3
+call    3 never executed
+    #####:   11:    this->size = size;
+        -:   12:
+        -:   13:
+    #####:   14:}
+        -:   15:
+function _ZN5ArrayD2Ev called 0 returned 0% blocks executed 0%
+    #####:   16:Array::~Array() {
+    #####:   17:    delete[] values;
+    %%%%%:   17-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   17-block  1
+call    2 never executed
+    #####:   18:}
+        -:   19:
+function _ZN5Array5printEv called 0 returned 0% blocks executed 0%
+    #####:   20:void Array::print() {
+    #####:   21:    for (int i = 0; i < count; i++) {
+    %%%%%:   21-block  0
+    %%%%%:   21-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   22:        cout << values[i] << '\t';
+    %%%%%:   22-block  0
+call    0 never executed
+call    1 never executed
+        -:   23:    }
+    #####:   24:}
+        -:   25:
+function _ZN5Array6insertEi called 0 returned 0% blocks executed 0%
+    #####:   26:void Array::insert(int item) {
+    #####:   27:    if (count >= size) {
+    %%%%%:   27-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   28:        size *= 2;
+    #####:   29:        auto new_values = new int[size];
+    %%%%%:   29-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   29-block  1
+    %%%%%:   29-block  2
+call    2 never executed
+    %%%%%:   29-block  3
+call    3 never executed
+    #####:   30:        for (int i = 0; i < size/2; i++) {
+    %%%%%:   30-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   31:            new_values[i] = values[i];
+    %%%%%:   31-block  0
+        -:   32:        }
+    #####:   33:        values = new_values;
+    %%%%%:   33-block  0
+        -:   34:    }
+    #####:   35:    values[count++] = item;
+        -:   36:
+    #####:   37:}
+        -:   38:
+function _ZN5Array9remove_atEi called 0 returned 0% blocks executed 0%
+    #####:   39:void Array::remove_at(int index) {
+    #####:   40:    values[index] = 0;
+    #####:   41:    for (int i = index; i < count; i++) {
+    %%%%%:   41-block  0
+    %%%%%:   41-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   42:        values[i] = values[i + 1];
+    %%%%%:   42-block  0
+        -:   43:    }
+    #####:   44:    count--;
+    #####:   45:}
+        -:   46:
+        -:   47:
+function _ZN5Array8index_ofEi called 0 returned 0% blocks executed 0%
+    #####:   48:int Array::index_of(int num) {
+    #####:   49:    for (int i = 0; i < count; i++)
+    %%%%%:   49-block  0
+    %%%%%:   49-block  1
+    %%%%%:   49-block  2
+branch  0 never executed
+branch  1 never executed
+    #####:   50:        if (values[i] == num) return i;
+    %%%%%:   50-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   50-block  1
+    #####:   51:    return -1;
+    %%%%%:   51-block  0
+        -:   52:}
+        -:   53:
+function _ZN5Array3maxEv called 0 returned 0% blocks executed 0%
+    #####:   54:int Array::max() {
+    #####:   55:    int max = values[0];
+    #####:   56:    for (int i = 1; i < count; i++)
+    %%%%%:   56-block  0
+    %%%%%:   56-block  1
+    %%%%%:   56-block  2
+branch  0 never executed
+branch  1 never executed
+    #####:   57:        if (values[i] > max)
+    %%%%%:   57-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   58:            max = values[i];
+    %%%%%:   58-block  0
+    #####:   59:    return max;
+    %%%%%:   59-block  0
+        -:   60:}
+        -:   61:
+        -:   62://int* Array::intersect(int* arr) {
+        -:   63://    int c = 0;
+        -:   64://    int* intesect =  new int;
+        -:   65://    int size = sizeof(arr) / sizeof(arr[0]);
+        -:   66://    for (int i = 0; i < size; i++) {
+        -:   67://        if (this->index_of(arr[i]) != -1){
+        -:   68://            intesect[c++] = arr[i];
+        -:   69://        }
+        -:   70://    }
+        -:   71://    return intesect;
+        -:   72://    delete[] intesect;
+        -:   73://}
+        -:   74:
+        -:   75:

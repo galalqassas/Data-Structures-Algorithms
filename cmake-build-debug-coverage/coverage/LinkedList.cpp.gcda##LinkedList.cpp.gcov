@@ -1,0 +1,301 @@
+        -:    0:Source:C:/Users/PC/CLionProjects/Data Structures and Algorithms/LinkedList.cpp
+        -:    0:Graph:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\LinkedList.cpp.gcno
+        -:    0:Data:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\LinkedList.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Pc on 7/2/2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "LinkedList.h"
+        -:    6:
+        -:    7:int LinkedList::size = 0;
+        -:    8:
+function _ZN10LinkedList7displayEv called 0 returned 0% blocks executed 0%
+    #####:    9:void LinkedList::display() {
+    #####:   10:    auto temp = head;
+    #####:   11:    while (temp != nullptr){
+    %%%%%:   11-block  0
+    %%%%%:   11-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   12:        cout << temp->value << " ";
+    %%%%%:   12-block  0
+call    0 never executed
+call    1 never executed
+    #####:   13:        temp = temp->next;
+        -:   14:    }
+    #####:   15:}
+        -:   16:
+function _ZN10LinkedList9add_firstEi called 0 returned 0% blocks executed 0%
+    #####:   17:void LinkedList::add_first(int item) {
+    #####:   18:    Node* n = new Node(item);
+    %%%%%:   18-block  0
+call    0 never executed
+call    1 never executed
+    #####:   19:    if (isEmpty()) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   20:        head = n;
+    #####:   21:        tail = n;
+    %%%%%:   21-block  0
+        -:   22:    }
+        -:   23:    else{
+    #####:   24:        n->next = head;
+    #####:   25:        head = n;
+    %%%%%:   25-block  0
+        -:   26:    }
+    #####:   27:    LinkedList::size ++;
+    #####:   28:}
+        -:   29:
+function _ZN10LinkedList8add_lastEi called 0 returned 0% blocks executed 0%
+    #####:   30:void LinkedList::add_last(int item) {
+    #####:   31:    Node* n = new Node(item);
+    %%%%%:   31-block  0
+call    0 never executed
+call    1 never executed
+    #####:   32:    if (isEmpty()){
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   33:        head = n;
+    #####:   34:        tail = n;
+    %%%%%:   34-block  0
+        -:   35:    }
+        -:   36:    else{
+    #####:   37:        tail->next = n;
+    #####:   38:        tail = n;
+    %%%%%:   38-block  0
+        -:   39:    }
+    #####:   40:    LinkedList::size ++;
+    #####:   41:}
+        -:   42:
+function _ZN10LinkedListD2Ev called 0 returned 0% blocks executed 0%
+    #####:   43:LinkedList::~LinkedList() {
+    #####:   44:    auto temp = head;
+    #####:   45:    while (temp != nullptr){
+    %%%%%:   45-block  0
+    %%%%%:   45-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   46:        auto next = temp->next;
+    #####:   47:        delete temp;
+    %%%%%:   47-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   47-block  1
+call    2 never executed
+    #####:   48:        temp = next;
+    %%%%%:   48-block  0
+        -:   49:    }
+    #####:   50:}
+        -:   51:
+function _ZN10LinkedList4findEi called 0 returned 0% blocks executed 0%
+    #####:   52:int LinkedList::find(int key) {
+    #####:   53:    Node* temp = head;
+    #####:   54:    int index = 0;
+    #####:   55:    while (temp != nullptr) {
+    %%%%%:   55-block  0
+    %%%%%:   55-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   56:        if (temp->value == key) {
+    %%%%%:   56-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   57:            return index;
+    %%%%%:   57-block  0
+        -:   58:        } else {
+    #####:   59:            index++;
+    #####:   60:            temp = temp->next;
+    %%%%%:   60-block  0
+        -:   61:        }
+        -:   62:    }
+    #####:   63:    return -1;
+    %%%%%:   63-block  0
+        -:   64:}
+        -:   65:
+function _ZN10LinkedList12delete_firstEv called 0 returned 0% blocks executed 0%
+    #####:   66:void LinkedList::delete_first() {
+    #####:   67:    if (head == tail){
+    %%%%%:   67-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   68:        head = tail = nullptr;
+    #####:   69:        LinkedList::size = 0;
+    #####:   70:        return;
+    %%%%%:   70-block  0
+    #####:   71:    } else if (isEmpty()) {
+    %%%%%:   71-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   72:        return;
+    %%%%%:   72-block  0
+        -:   73:    }else{
+    #####:   74:        Node *second = head->next;
+    #####:   75:        head->next = nullptr;
+    #####:   76:        head = second;
+    #####:   77:        LinkedList::size--;
+    %%%%%:   77-block  0
+        -:   78:    }
+        -:   79:}
+        -:   80:
+function _ZN10LinkedList11delete_lastEv called 0 returned 0% blocks executed 0%
+    #####:   81:void LinkedList::delete_last() {
+    #####:   82:    if (head == tail) {
+    %%%%%:   82-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   83:        head = tail = nullptr;
+    #####:   84:        LinkedList::size = 0;
+    #####:   85:        return;
+    %%%%%:   85-block  0
+    #####:   86:    }else if (isEmpty()){
+    %%%%%:   86-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   87:        return;
+    %%%%%:   87-block  0
+        -:   88:    } else {
+    #####:   89:        auto temp = head;
+    %%%%%:   89-block  0
+        -:   90:        while (true) {
+    #####:   91:            if (temp->next->next == nullptr) {
+    %%%%%:   91-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   92:                auto before_last = temp;
+    #####:   93:                before_last->next = nullptr;
+    #####:   94:                tail = before_last;
+    #####:   95:                break;
+    %%%%%:   95-block  0
+        -:   96:            } else {
+    #####:   97:                temp = temp->next;
+        -:   98:            }
+    #####:   99:        }
+    %%%%%:   99-block  0
+    #####:  100:        LinkedList::size--;
+    %%%%%:  100-block  0
+        -:  101:    }
+        -:  102:}
+        -:  103:
+function _ZN10LinkedList8containsEi called 0 returned 0% blocks executed 0%
+    #####:  104:bool LinkedList::contains(int item) {
+    #####:  105:    return (find(item) != -1);
+    %%%%%:  105-block  0
+call    0 never executed
+        -:  106:}
+        -:  107:
+function _ZN10LinkedList7getSizeEv called 0 returned 0% blocks executed 0%
+    #####:  108:int LinkedList::getSize() {
+    #####:  109:    return size;
+    %%%%%:  109-block  0
+        -:  110:}
+        -:  111:
+function _ZN10LinkedList7setSizeEi called 0 returned 0% blocks executed 0%
+    #####:  112:void LinkedList::setSize(int size) {
+    #####:  113:    LinkedList::size = size;
+    #####:  114:}
+        -:  115:
+function _ZN10LinkedList8to_arrayEv called 0 returned 0% blocks executed 0%
+    #####:  116:int* LinkedList::to_array() {
+    #####:  117:    int* linked_list_array = new int[LinkedList::getSize()];
+    %%%%%:  117-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  117-block  1
+    %%%%%:  117-block  2
+call    3 never executed
+    %%%%%:  117-block  3
+call    4 never executed
+    #####:  118:    auto temp = head;
+    #####:  119:    int index = 0;
+    #####:  120:    while (temp != nullptr) {
+    %%%%%:  120-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  121:        linked_list_array[index++] = temp->value;
+    #####:  122:        temp = temp->next;
+    %%%%%:  122-block  0
+        -:  123:    }
+    #####:  124:    return linked_list_array;
+    %%%%%:  124-block  0
+        -:  125:}
+        -:  126:
+        -:  127:// [10 -> 20 -> 30]
+        -:  128:
+function _ZN10LinkedList7reverseEv called 0 returned 0% blocks executed 0%
+    #####:  129:void LinkedList::reverse() {
+    #####:  130:    if (isEmpty()) return;
+    %%%%%:  130-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  130-block  1
+    #####:  131:    auto previous = head;
+    #####:  132:    auto current = head->next;
+        -:  133:
+    #####:  134:    previous->next = nullptr;
+        -:  135:
+    #####:  136:    while (current != nullptr) {
+    %%%%%:  136-block  0
+    %%%%%:  136-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:  137:        auto backup = current->next;
+    #####:  138:        current->next = previous;
+    #####:  139:        previous = current;
+    #####:  140:        current = backup;
+    %%%%%:  140-block  0
+        -:  141:    }
+    #####:  142:    tail = head;
+    #####:  143:    tail->next = nullptr;
+    #####:  144:    head=previous;
+    %%%%%:  144-block  0
+        -:  145:}
+        -:  146:
+function _ZN10LinkedList20get_kth_from_the_endEi called 0 returned 0% blocks executed 0%
+    #####:  147:int LinkedList::get_kth_from_the_end(int k) {
+        -:  148:    // check if k is valid
+    #####:  149:    if (k > LinkedList::size || k <= 0) return -1;
+    %%%%%:  149-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  149-block  1
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  149-block  2
+        -:  150:
+        -:  151:    // initialize two pointers to the head of the list
+    #####:  152:    auto first = head;
+    #####:  153:    auto kth = first;
+        -:  154:
+        -:  155:    // move the first pointer k steps ahead of the second
+    #####:  156:    for (int i = 1; i < k; i++) {
+    %%%%%:  156-block  0
+    %%%%%:  156-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:  157:        kth = kth->next;
+    %%%%%:  157-block  0
+        -:  158:    }
+        -:  159:
+        -:  160:    // move both pointers until the second one reaches the end
+    #####:  161:    while (kth->next != nullptr) {
+    %%%%%:  161-block  0
+    %%%%%:  161-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:  162:        first = first->next;
+    #####:  163:        kth=kth->next;
+    %%%%%:  163-block  0
+        -:  164:    }
+        -:  165:
+        -:  166:    // return the value of the first pointer, which is the kth node from the end
+    #####:  167:    return first->value;
+    %%%%%:  167-block  0
+        -:  168:}
+        -:  169:

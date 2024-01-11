@@ -1,0 +1,68 @@
+        -:    0:Source:C:/Users/PC/CLionProjects/Data Structures and Algorithms/Heap.cpp
+        -:    0:Graph:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\Heap.cpp.gcno
+        -:    0:Data:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\Heap.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by PC on 7/30/2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "Heap.h"
+        -:    6:
+function _ZN4HeapC2Ei called 1 returned 100% blocks executed 80%
+        1:    7:Heap::Heap(int s) {
+       1*:    8:    heap = new int[s];
+        1:    8-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:    8-block  1
+    %%%%%:    8-block  2
+call    2 never executed
+        1:    8-block  3
+call    3 returned 1
+        1:    9:    size = s;
+        1:   10:}
+        -:   11:
+        -:   12:
+        -:   13:
+function _ZN4Heap10swap_indexEii called 2152965954 returned 100% blocks executed 100%
+2152965954:   14:void Heap::swap_index(int first, int second) {
+2152965954:   15:    int temp = heap[first];
+2152965954:   16:    heap[first] = heap[second];
+2152965954:   17:    heap[second] = temp;
+2152965954:   18:}
+        -:   19:
+function _ZN4Heap6insertEi called 2 returned 50% blocks executed 86%
+        2:   20:void Heap::insert(int item) {
+        2:   21:    if (count == size) {
+        2:   21-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:   22:        return;
+    %%%%%:   22-block  0
+        -:   23:    }
+        2:   24:    heap[count++] = item;
+        2:   25:    int index = count -1;
+        2:   26:    int parent_index = index - 1 / 2;
+2152965955:   27:    while (heap[index], parent_index){
+        2:   27-block  0
+2152965955:   27-block  1
+branch  0 taken 2152965954
+branch  1 taken 1 (fallthrough)
+2152965954:   28:        swap_index(index, parent_index);
+2152965954:   28-block  0
+call    0 returned 2152965953
+2152965953:   29:        index = index - 1 / 2;
+        -:   30:    }
+        -:   31:
+        -:   32:
+        -:   33:}
+        -:   34:
+function _ZN4HeapD2Ev called 0 returned 0% blocks executed 0%
+    #####:   35:Heap::~Heap() {
+    #####:   36:    delete[] heap;
+    %%%%%:   36-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   36-block  1
+call    2 never executed
+    #####:   37:}

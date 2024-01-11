@@ -1,0 +1,3 @@
+C:/Users/PC/CLionProjects/Data Structures and Algorithms/cmake-build-debug/CMakeFiles/For_Trying.dir
+C:/Users/PC/CLionProjects/Data Structures and Algorithms/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/PC/CLionProjects/Data Structures and Algorithms/cmake-build-debug/CMakeFiles/rebuild_cache.dir

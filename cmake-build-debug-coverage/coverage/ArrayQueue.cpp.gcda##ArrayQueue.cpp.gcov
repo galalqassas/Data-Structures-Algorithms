@@ -1,0 +1,87 @@
+        -:    0:Source:C:/Users/PC/CLionProjects/Data Structures and Algorithms/ArrayQueue.cpp
+        -:    0:Graph:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\ArrayQueue.cpp.gcno
+        -:    0:Data:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\ArrayQueue.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by PC on 7/17/2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "ArrayQueue.h"
+        -:    6:#include <iostream>
+        -:    7:using namespace std;
+function _ZN10ArrayQueueC2Ei called 0 returned 0% blocks executed 0%
+    #####:    8:ArrayQueue::ArrayQueue(int s) {
+    #####:    9:    values = new int[s];
+    %%%%%:    9-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:    9-block  1
+    %%%%%:    9-block  2
+call    2 never executed
+    %%%%%:    9-block  3
+call    3 never executed
+    #####:   10:    size = s;
+    #####:   11:}
+        -:   12:
+function _ZN10ArrayQueue7enqueueEi called 0 returned 0% blocks executed 0%
+    #####:   13:void ArrayQueue::enqueue(int item) {
+    #####:   14:    if (count == size) {
+    %%%%%:   14-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   15:        cout << "\nSize full\n";
+    %%%%%:   15-block  0
+call    0 never executed
+    #####:   16:        return;
+        -:   17:    }
+    #####:   18:    values[rear] = item;
+    #####:   19:    rear = (rear+1) % size;
+    #####:   20:    count++;
+    %%%%%:   20-block  0
+        -:   21:
+        -:   22:}
+        -:   23:
+function _ZN10ArrayQueue7dequeueEv called 0 returned 0% blocks executed 0%
+    #####:   24:int ArrayQueue::dequeue() {
+    #####:   25:    auto item = values[front];
+    #####:   26:    values[front] = 0;
+    #####:   27:    front = (front + 1) % 5;
+    #####:   28:    count --;
+    #####:   29:    return item;
+    %%%%%:   29-block  0
+        -:   30:
+        -:   31:}
+        -:   32:
+function _ZN10ArrayQueue4peekEv called 0 returned 0% blocks executed 0%
+    #####:   33:int ArrayQueue::peek() {
+    #####:   34:    return values[front];
+    %%%%%:   34-block  0
+        -:   35:
+        -:   36:}
+        -:   37:
+function _ZN10ArrayQueue8is_emptyEv called 0 returned 0% blocks executed 0%
+    #####:   38:bool ArrayQueue::is_empty() {
+    #####:   39:    return front == 0;
+    %%%%%:   39-block  0
+        -:   40:}
+        -:   41:
+function _ZN10ArrayQueue7is_fullEv called 0 returned 0% blocks executed 0%
+    #####:   42:bool ArrayQueue::is_full() {
+    #####:   43:    return count == size;
+    %%%%%:   43-block  0
+        -:   44:}
+        -:   45:
+function _ZN10ArrayQueue7displayEv called 0 returned 0% blocks executed 0%
+    #####:   46:void ArrayQueue::display() {
+    #####:   47:    for (int i = 0; i < size; i++) {
+    %%%%%:   47-block  0
+    %%%%%:   47-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   48:        cout << values[i] << '\n';
+    %%%%%:   48-block  0
+call    0 never executed
+call    1 never executed
+        -:   49:    }
+        -:   50:
+    #####:   51:}

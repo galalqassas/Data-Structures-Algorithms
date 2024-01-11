@@ -1,0 +1,54 @@
+        -:    0:Source:C:/Users/PC/CLionProjects/Data Structures and Algorithms/LinkedList.h
+        -:    0:Graph:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\LinkedList.cpp.gcno
+        -:    0:Data:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\LinkedList.cpp.gcda
+        -:    0:Runs:1
+        -:    1:// Created by Pc on 7/2/2023.
+        -:    2:
+        -:    3:#ifndef FOR_TRYING_LINKEDLIST_H
+        -:    4:#define FOR_TRYING_LINKEDLIST_H
+        -:    5:
+        -:    6:#include <iostream>
+        -:    7:using namespace std;
+        -:    8:
+        -:    9:class LinkedList {
+        -:   10:private:
+        -:   11:    class Node{
+        -:   12:    public:
+        -:   13:        int value;
+        -:   14:        Node* next;
+function _ZN10LinkedList4NodeC1Ei called 0 returned 0% blocks executed 0%
+    #####:   15:        Node(int value): value(value), next(nullptr){}
+        -:   16:    };
+        -:   17:    Node* head;
+        -:   18:    Node* tail;
+function _ZN10LinkedList7isEmptyEv called 0 returned 0% blocks executed 0%
+    #####:   19:    bool isEmpty(){
+    #####:   20:        return (head == nullptr);
+    %%%%%:   20-block  0
+        -:   21:    }
+        -:   22:    static int size;
+        -:   23:public:
+        -:   24:    static int getSize();
+        -:   25:
+        -:   26:    static void setSize(int size);
+        -:   27:
+        -:   28:public:
+        -:   29:    LinkedList(){head = nullptr; tail = nullptr;}
+        -:   30:    ~LinkedList();
+        -:   31:    void add_first(int item);
+        -:   32:    void add_last(int item);
+        -:   33:    void display();
+        -:   34:
+        -:   35:    void delete_first();
+        -:   36:    void delete_last();
+        -:   37:
+        -:   38:    bool contains(int item);
+        -:   39:    int find(int key);
+        -:   40:    int* to_array();
+        -:   41:
+        -:   42:    void reverse();
+        -:   43:
+        -:   44:    int get_kth_from_the_end(int k);
+        -:   45:};
+        -:   46:
+        -:   47:#endif //FOR_TRYING_LINKEDLIST_H

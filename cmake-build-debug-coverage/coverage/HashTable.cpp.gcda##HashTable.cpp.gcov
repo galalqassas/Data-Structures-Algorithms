@@ -1,0 +1,142 @@
+        -:    0:Source:C:/Users/PC/CLionProjects/Data Structures and Algorithms/HashTable.cpp
+        -:    0:Graph:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\HashTable.cpp.gcno
+        -:    0:Data:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\HashTable.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by PC on 7/24/2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "HashTable.h"
+        -:    6:
+    #####:    7:HashTable::~HashTable() {
+    #####:    8:    delete[] entries;
+    #####:    9:}
+------------------
+_ZN9HashTableD0Ev:
+function _ZN9HashTableD0Ev called 0 returned 0% blocks executed 0%
+    #####:    7:HashTable::~HashTable() {
+        -:    8:    delete[] entries;
+    #####:    9:}
+    %%%%%:    9-block  0
+call    0 never executed
+call    1 never executed
+------------------
+_ZN9HashTableD2Ev:
+function _ZN9HashTableD2Ev called 0 returned 0% blocks executed 0%
+    #####:    7:HashTable::~HashTable() {
+    #####:    8:    delete[] entries;
+    %%%%%:    8-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:    8-block  1
+    %%%%%:    8-block  2
+branch  2 never executed
+branch  3 never executed
+    %%%%%:    8-block  3
+call    4 never executed
+    %%%%%:    8-block  4
+call    5 never executed
+    #####:    9:}
+------------------
+        -:   10:
+function _ZN9HashTable3putEiRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   11:void HashTable::put(int key, string& value) {
+    #####:   12:    int index = hash(key);
+    %%%%%:   12-block  0
+call    0 never executed
+    #####:   13:    auto entry = new Entry(key, value);
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   13-block  0
+call    4 never executed
+    #####:   14:    for (auto entry: entries[index]){
+    %%%%%:   14-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:   14-block  1
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   14-block  2
+call    6 never executed
+    %%%%%:   14-block  3
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    #####:   15:        if (entry.key == key){
+    %%%%%:   15-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   16:            entry.value = value;
+    %%%%%:   16-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   17:            return;
+    %%%%%:   17-block  0
+        -:   18:        }
+    #####:   19:    }
+    %%%%%:   19-block  0
+    %%%%%:   19-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   19-block  2
+call    3 never executed
+    #####:   20:    entries[index].emplace_front(*entry);
+    %%%%%:   20-block  0
+call    0 never executed
+        -:   21:}
+        -:   22:
+function _ZN9HashTable3getB5cxx11Ei called 0 returned 0% blocks executed 0%
+    #####:   23:string HashTable::get(int key) {
+    #####:   24:    int index = hash(key);
+    %%%%%:   24-block  0
+call    0 never executed
+    #####:   25:    for (auto en: entries[index]){
+call    0 never executed
+call    1 never executed
+    %%%%%:   25-block  0
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   25-block  1
+call    6 never executed
+    %%%%%:   25-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    #####:   26:        if (en.key == key){
+    %%%%%:   26-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   27:            return en.value;
+    %%%%%:   27-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   27-block  1
+        -:   28:        }
+    #####:   29:    }
+    %%%%%:   29-block  0
+    %%%%%:   29-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   29-block  2
+call    3 never executed
+    #####:   30:    return "";
+    %%%%%:   30-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   30-block  1
+call    4 never executed
+    $$$$$:   30-block  2
+call    5 never executed
+        -:   31:}

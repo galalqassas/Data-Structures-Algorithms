@@ -1,0 +1,42 @@
+        -:    0:Source:C:/Users/PC/CLionProjects/Data Structures and Algorithms/HashTable.h
+        -:    0:Graph:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\HashTable.cpp.gcno
+        -:    0:Data:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\HashTable.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by PC on 7/24/2023.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef FOR_TRYING_HASHTABLE_H
+        -:    6:#define FOR_TRYING_HASHTABLE_H
+        -:    7:
+        -:    8:#include <iostream>
+        -:    9:using namespace std;
+        -:   10:#include <forward_list>
+        -:   11:class HashTable {
+        -:   12:private:
+        -:   13:    class Entry{
+        -:   14:    public:
+        -:   15:        int key;
+        -:   16:        string value;
+function _ZN9HashTable5EntryC1EiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   17:        Entry(int key, const string& value) : key(key), value(value) {};
+    %%%%%:   17-block  0
+call    0 never executed
+        -:   18:    };
+        -:   19:    int size = 5;
+        -:   20:    forward_list<Entry>* entries = new forward_list<Entry>[size];
+        -:   21:
+function _ZN9HashTable4hashEi called 0 returned 0% blocks executed 0%
+    #####:   22:    int hash(int key){
+    #####:   23:        return (key % size);
+    %%%%%:   23-block  0
+        -:   24:    }
+        -:   25:public:
+        -:   26:    virtual ~HashTable();
+        -:   27:    void put(int key, string& value);
+        -:   28:
+        -:   29:    string get(int key);
+        -:   30:};
+        -:   31:
+        -:   32:
+        -:   33:#endif //FOR_TRYING_HASHTABLE_H

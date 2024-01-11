@@ -1,0 +1,12 @@
+# ninja log v5
+16	87	7125285248196757	CMakeFiles/For_Trying.dir/AVLTree.cpp.obj	b3fc721a53910c2d
+27	343	7125285250778120	CMakeFiles/For_Trying.dir/ArrayQueue.cpp.obj	d78eb8f862dc1779
+2	42	7125285639906063	CMakeFiles/For_Trying.dir/Heap.cpp.obj	f0158ea1400508fe
+9	319	7125285250538924	CMakeFiles/For_Trying.dir/Array.cpp.obj	5a54b0e89b344ab0
+12	321	7125285250528954	CMakeFiles/For_Trying.dir/Stack.cpp.obj	edbf3defe312743e
+6	321	7125285250538924	CMakeFiles/For_Trying.dir/StackArray.cpp.obj	2eae42b5016c6e88
+3	372	7125285251077114	CMakeFiles/For_Trying.dir/LinkedList.cpp.obj	fa8dbfb0d611f99b
+0	365	7125285251007354	CMakeFiles/For_Trying.dir/main.cpp.obj	749ab1033c4a1338
+23	418	7125285251525613	CMakeFiles/For_Trying.dir/HashTable.cpp.obj	48aa1acc2ff7baa0
+19	493	7125285252283078	CMakeFiles/For_Trying.dir/Tree.cpp.obj	bac770c2d460f196
+42	112	7125285640593758	For_Trying.exe	2576d2da9aeb90bf

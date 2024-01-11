@@ -1,0 +1,56 @@
+        -:    0:Source:C:/Users/PC/CLionProjects/Data Structures and Algorithms/main.cpp
+        -:    0:Graph:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:using namespace std;
+        -:    3:#include "HashTable.h"
+        -:    4:#include "Heap.h"
+        -:    5:
+function main called 1 returned 0% blocks executed 31%
+        1:    6:int main() {
+        1:    7:    Heap h{10};
+        1:    7-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    8:    h.insert(10);
+        1:    8-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    9:    h.insert(20);
+        1:    9-block  0
+call    0 returned 0
+branch  1 taken 0 (fallthrough)
+branch  2 taken 0 (throw)
+    #####:   10:    h.insert(30);
+    %%%%%:   10-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   11:    h.insert(40);
+    %%%%%:   11-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   12:    h.insert(50);
+    %%%%%:   12-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   13:    cout << "Done";
+    %%%%%:   13-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   14:}
+    %%%%%:   14-block  0
+call    0 never executed
+    %%%%%:   14-block  1
+    $$$$$:   14-block  2
+call    1 never executed
+        -:   15:
+        -:   16:
+        -:   17:
+        -:   18:

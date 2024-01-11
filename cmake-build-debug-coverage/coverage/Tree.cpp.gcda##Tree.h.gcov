@@ -1,0 +1,48 @@
+        -:    0:Source:C:/Users/PC/CLionProjects/Data Structures and Algorithms/Tree.h
+        -:    0:Graph:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\Tree.cpp.gcno
+        -:    0:Data:C:\Users\PC\CLionProjects\Data Structures and Algorithms\cmake-build-debug-coverage\CMakeFiles\For_Trying.dir\Tree.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by PC on 7/24/2023.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef FOR_TRYING_TREE_H
+        -:    6:#define FOR_TRYING_TREE_H
+        -:    7:
+        -:    8:
+        -:    9:class Tree {
+        -:   10:private:
+        -:   11:    class Node{
+        -:   12:    public:
+        -:   13:        int value;
+        -:   14:        Node* left_child;
+        -:   15:        Node* right_child;
+        -:   16:
+function _ZN4Tree4NodeC1Ei called 0 returned 0% blocks executed 0%
+    #####:   17:        explicit Node(int value) {
+    #####:   18:            this->value = value;
+    #####:   19:            this->left_child = nullptr;
+    #####:   20:            this->right_child = nullptr;
+    #####:   21:        }
+        -:   22:    };
+        -:   23:
+        -:   24:    Node* root = nullptr;
+        -:   25:    int height(Node* root);
+        -:   26:    void traverse_post_order_implementation(Node* root);
+        -:   27:    bool equals(Node* first, Node* second);
+        -:   28:    bool is_binary_search_tree(Node* root, int min, int max);
+        -:   29:    void print_nodes_at_k_implementation(Node* root, int k);
+        -:   30:
+        -:   31:public:
+        -:   32:    void insert(int item);
+        -:   33:    int find(int item);
+        -:   34:    void traverse_post_order();
+        -:   35:    int height();
+        -:   36:    bool equals(Tree other);
+        -:   37:    bool is_binary_search_tree();
+        -:   38:    void print_nodes_at_k(int k);
+        -:   39:
+        -:   40:};
+        -:   41:
+        -:   42:
+        -:   43:#endif //FOR_TRYING_TREE_H
