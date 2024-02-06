@@ -10,17 +10,27 @@ class AVLTree {
 private:
     class AVLNode{
     public:
-        int value;
-        AVLNode* left_node;
-        AVLNode* right_node;
-        explicit AVLNode(int value){
-            this->value= value;
-            this->right_node = nullptr;
-            this->left_node = nullptr;
+        int item;
+        AVLNode* leftChild = nullptr;
+        AVLNode* rightChild = nullptr;
+        int height = 0;
+        explicit AVLNode(int item) {
+            this->item = item;
+            this->leftChild = nullptr;
+            this->rightChild = nullptr;
+            this->height= 0;
         }
     };
-    AVLNode* tree_root = nullptr;
-    void insert(AVLNode* root, int item);
+    AVLNode* root = nullptr;
+    void insertPrivate(AVLNode*& root, int value);
+    int height(AVLNode* node);
+    int balanceFactor(AVLNode *node);
+    bool isLeftHeavy(AVLNode* node);
+    bool isRightHeavy(AVLNode* node);
+    AVLNode* balance(AVLNode* &node);
+    void setHeight(AVLNode *node);
+    AVLNode *rotateRight(AVLNode*& node);
+    AVLNode *rotateLeft(AVLNode*& node);
 public:
     void insert(int item);
 };

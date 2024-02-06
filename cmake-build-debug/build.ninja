@@ -109,6 +109,12 @@ build CMakeFiles/For_Trying.dir/Heap.cpp.obj: CXX_COMPILER__For_Trying_Debug C$:
   OBJECT_DIR = CMakeFiles\For_Trying.dir
   OBJECT_FILE_DIR = CMakeFiles\For_Trying.dir
 
+build CMakeFiles/For_Trying.dir/Trie.cpp.obj: CXX_COMPILER__For_Trying_Debug C$:/Users/PC/CLionProjects/Data$ Structures$ and$ Algorithms/Trie.cpp || cmake_object_order_depends_target_For_Trying
+  DEP_FILE = CMakeFiles\For_Trying.dir\Trie.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\For_Trying.dir
+  OBJECT_FILE_DIR = CMakeFiles\For_Trying.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target For_Trying
@@ -117,7 +123,7 @@ build CMakeFiles/For_Trying.dir/Heap.cpp.obj: CXX_COMPILER__For_Trying_Debug C$:
 #############################################
 # Link the executable For_Trying.exe
 
-build For_Trying.exe: CXX_EXECUTABLE_LINKER__For_Trying_Debug CMakeFiles/For_Trying.dir/main.cpp.obj CMakeFiles/For_Trying.dir/LinkedList.cpp.obj CMakeFiles/For_Trying.dir/Array.cpp.obj CMakeFiles/For_Trying.dir/Stack.cpp.obj CMakeFiles/For_Trying.dir/StackArray.cpp.obj CMakeFiles/For_Trying.dir/ArrayQueue.cpp.obj CMakeFiles/For_Trying.dir/HashTable.cpp.obj CMakeFiles/For_Trying.dir/Tree.cpp.obj CMakeFiles/For_Trying.dir/AVLTree.cpp.obj CMakeFiles/For_Trying.dir/Heap.cpp.obj
+build For_Trying.exe: CXX_EXECUTABLE_LINKER__For_Trying_Debug CMakeFiles/For_Trying.dir/main.cpp.obj CMakeFiles/For_Trying.dir/LinkedList.cpp.obj CMakeFiles/For_Trying.dir/Array.cpp.obj CMakeFiles/For_Trying.dir/Stack.cpp.obj CMakeFiles/For_Trying.dir/StackArray.cpp.obj CMakeFiles/For_Trying.dir/ArrayQueue.cpp.obj CMakeFiles/For_Trying.dir/HashTable.cpp.obj CMakeFiles/For_Trying.dir/Tree.cpp.obj CMakeFiles/For_Trying.dir/AVLTree.cpp.obj CMakeFiles/For_Trying.dir/Heap.cpp.obj CMakeFiles/For_Trying.dir/Trie.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\For_Trying.dir
